@@ -50,3 +50,9 @@ Firmware is flashed using espotool:
 To connect to serial port, run the following commnd passing the port and the baud rate:
 
 `python -m serial.tools.miniterm "<port>" 115200`
+
+### Menuconfig
+
+To open the menuconfig, run the following command in the application folder:
+
+`west build -p always -b <board> -t menuconfig`

@@ -1,0 +1,8 @@
+# Create a configuration for print_lib
+
+config PRINT_LIB
+    bool "Enable print_lib"
+    default n
+    depends on PRINTK
+    help
+      Enable the print_lib feature from the print_lib module.

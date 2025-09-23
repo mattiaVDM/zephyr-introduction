@@ -1,0 +1,4 @@
+name: print_lib
+build:
+  cmake: .
+  kconfig: Kconfig
