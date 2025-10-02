@@ -1,0 +1,7 @@
+# 6 - Device drivers
+
+These are the reference to better understand how to write device drivers on Zephyr:
+
+[DigiKey course material](https://www.digikey.com/en/maker/tutorials/2025/introduction-to-zephyr-part-6-device-driver-development)
+
+[DigiKey example repository](https://github.com/ShawnHymel/workshop-zephyr-device-driver)
