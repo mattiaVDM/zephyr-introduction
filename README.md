@@ -1,6 +1,6 @@
 # Zephyr introduction
 
-This repo contains Zephyr study material for begginners, based on DigiKey's [Youtube course](https://github.com/mattiaVDM/zephyr-introduction).
+This repo contains Zephyr study material for begginners, based on DigiKey's [Youtube course](https://www.youtube.com/watch?v=mTJ_vKlMS_4&pp=ygUdSW50cm9kdWN0aW9uIHRvIFplcGh5ciBQYXJ0IDE%3D).
 
 In addition to the course material, this repo is meant to simplify the development on Linux devices, removing the need of using a Docker container to run Zephyr.
 

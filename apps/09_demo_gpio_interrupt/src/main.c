@@ -14,7 +14,8 @@ void button_isr(const struct device *dev,
                 uint32_t pins)
 {
     // Check if the correct button was pressed
-    if (BIT(btn.pin) & pins) {
+    if (BIT(btn.pin) & pins)
+    {
         printk("Button pressed! Pin: %d\r\n", btn.pin);
     }
 }
@@ -24,21 +25,24 @@ int main(void)
     int ret;
 
     // Make sure that the button was initialized
-    if (!gpio_is_ready_dt(&btn)) {
+    if (!gpio_is_ready_dt(&btn))
+    {
         printk("ERROR: button not ready\r\n");
         return 0;
     }
 
     // Set the button as input (apply extra flags if needed)
     ret = gpio_pin_configure_dt(&btn, GPIO_INPUT);
-    if (ret < 0) {
+    if (ret < 0)
+    {
         printk("ERROR: could not set button as input\r\n");
         return 0;
     }
 
     // Configure the interrupt
     ret = gpio_pin_interrupt_configure_dt(&btn, GPIO_INT_EDGE_TO_ACTIVE);
-    if (ret < 0) {
+    if (ret < 0)
+    {
         printk("ERROR: could not configure button as interrupt source\r\n");
         return 0;
     }
@@ -48,7 +52,8 @@ int main(void)
     gpio_add_callback(btn.port, &btn_cb_data);
 
     // Do nothing
-    while (1) {
+    while (1)
+    {
         k_sleep(K_FOREVER);
     }
 
